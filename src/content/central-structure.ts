@@ -115,7 +115,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-909-517-34-37, @iraidandko",
     "email": "",
-    "photo": "/structure/directions/И. А. Сальникова.PNG",
+    "photo": "/structure/directions/И. А. Сальникова.png",
     "directionLogo": "/svg/directions/medical-color.svg",
     "photoScale": 2.0,
     "photoOrigin": "50% 30%"
