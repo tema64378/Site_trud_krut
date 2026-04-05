@@ -31,6 +31,8 @@ extract-sources.js
 
 # Figma/SVG exports (не нужны в деплое)
 svg/
+!public/svg/
+!public/svg/**
 public/structure-ascii/
 
 # Большие видео (не нужны для structure страницы)

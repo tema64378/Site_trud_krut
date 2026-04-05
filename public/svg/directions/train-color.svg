@@ -1,0 +1,25 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Вагон -->
+  <rect x="10" y="70" width="180" height="80" rx="16" fill="#0804ff"/>
+  <!-- Окна -->
+  <rect x="24" y="86" width="30" height="28" rx="6" fill="white" opacity="0.9"/>
+  <rect x="66" y="86" width="30" height="28" rx="6" fill="white" opacity="0.9"/>
+  <rect x="108" y="86" width="30" height="28" rx="6" fill="white" opacity="0.9"/>
+  <rect x="150" y="86" width="28" height="28" rx="6" fill="white" opacity="0.9"/>
+  <!-- Полоса -->
+  <rect x="10" y="122" width="180" height="8" rx="0" fill="white" opacity="0.15"/>
+  <!-- Колёса -->
+  <circle cx="45" cy="158" r="16" fill="#0804ff" stroke="white" stroke-width="6"/>
+  <circle cx="155" cy="158" r="16" fill="#0804ff" stroke="white" stroke-width="6"/>
+  <circle cx="45" cy="158" r="5" fill="white"/>
+  <circle cx="155" cy="158" r="5" fill="white"/>
+  <!-- Рельсы -->
+  <rect x="5" y="172" width="190" height="6" rx="3" fill="#0804ff" opacity="0.4"/>
+  <!-- Морда / кабина -->
+  <rect x="160" y="55" width="30" height="96" rx="12" fill="#0804ff"/>
+  <rect x="164" y="66" width="22" height="20" rx="5" fill="white" opacity="0.9"/>
+  <!-- Фара -->
+  <circle cx="186" cy="105" r="5" fill="white" opacity="0.9"/>
+  <!-- Сцепка -->
+  <rect x="2" y="104" width="12" height="8" rx="3" fill="#0804ff"/>
+</svg>
