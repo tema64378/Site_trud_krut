@@ -19,7 +19,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководство Центрального штаба",
     "phone": "8-903-025-40-10, @yaroslav_zubashchenko",
     "email": "",
-    "photo": "/structure/zubashchenko-leadership.jpg",
+    "photo": "/structure-safe/photo-01.jpg",
     "photoScale": 2.5,
     "photoOrigin": "50% 20%",
     "directionLogo": "/svg/directions/zubashchenko-logo.svg",
@@ -31,7 +31,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководство Центрального штаба",
     "phone": "8-913-635-25-29, @yulyapozdno",
     "email": "",
-    "photo": "/structure/pozdnyakova-leadership.jpg",
+    "photo": "/structure-safe/photo-02.jpg",
     "photoScale": 1.4,
     "directionLogo": "/svg/directions/pozdnyakova-logo.svg",
     "directionLogoStyle": "pattern"
@@ -42,7 +42,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-961-880-99-55, @celyimir",
     "email": "",
-    "photo": "/structure/directions/Д. О. Коротков.jpg",
+    "photo": "/structure-safe/photo-03.jpg",
     "photoScale": 2.0,
     "directionLogo": "/svg/directions/sop-color.svg"
   },
@@ -52,7 +52,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-999-469-18-05, @AndreyShV",
     "email": "",
-    "photo": "/structure/directions/А. В. Шалыгин.JPG",
+    "photo": "/structure-safe/photo-04.jpg",
     "photoScale": 2.0,
     "directionLogo": "/svg/directions/construction-color.svg"
   },
@@ -62,7 +62,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-906-887-55-63, @aablumin",
     "email": "",
-    "photo": "/structure/directions/А. А. Блюмин.jpg",
+    "photo": "/structure-safe/photo-05.jpg",
     "photoScale": 2.2,
     "directionLogo": "/svg/directions/agriculture-color.svg"
   },
@@ -72,7 +72,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-914-197-93-56, @Shaikin_Pavel",
     "email": "",
-    "photo": "/structure/directions/П. А. Шайкин.png",
+    "photo": "/structure-safe/photo-06.png",
     "photoScale": 2.1,
     "photoOrigin": "50% 34%",
     "directionLogo": "/svg/directions/puting-color.svg"
@@ -83,7 +83,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-952-805-05-80, @grznv_k",
     "email": "",
-    "photo": "/structure/directions/Е. А. Грязнова.JPG",
+    "photo": "/structure-safe/photo-07.jpg",
     "photoScale": 1.4,
     "photoOrigin": "50% 34%",
     "directionLogo": "/svg/directions/service-color.svg"
@@ -94,7 +94,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-908-794-10-76, @polina423",
     "email": "",
-    "photo": "/structure/directions/П. Е. Комарова.JPG",
+    "photo": "/structure-safe/photo-08.jpg",
     "photoScale": 1.5,
     "directionLogo": "/svg/directions/pedagogy-color.svg"
   },
@@ -104,7 +104,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-960-303-56-22, @immortallem",
     "email": "",
-    "photo": "/structure/directions/М. Н. Рыбакова.JPG",
+    "photo": "/structure-safe/photo-09.jpg",
     "photoScale": 2.9,
     "photoOrigin": "50% 24%",
     "directionLogo": "/svg/directions/youth-color.svg"
@@ -115,7 +115,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-909-517-34-37, @iraidandko",
     "email": "",
-    "photo": "/structure/directions/И. А. Сальникова.png",
+    "photo": "/structure-safe/photo-10.png",
     "directionLogo": "/svg/directions/medical-color.svg",
     "photoScale": 2.0,
     "photoOrigin": "50% 30%"
@@ -126,7 +126,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-999-459-87-74, @V_N_Pasenkova",
     "email": "",
-    "photo": "/structure/directions/В. Н. Пасенкова.jpg",
+    "photo": "/structure-safe/photo-11.jpg",
     "photoScale": 2.3,
     "directionLogo": "/svg/directions/railway-color.svg"
   },
@@ -136,7 +136,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-918-546-32-68, @volodiyay",
     "email": "",
-    "photo": "/structure/directions/В. А. Живой.PNG",
+    "photo": "/structure-safe/photo-12.png",
     "photoScale": 2.5,
     "photoOrigin": "50% 5%",
     "directionLogo": "/svg/directions/agriculture-color.svg"
@@ -147,7 +147,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8-983-385-15-44, @MargaritaBars25",
     "email": "",
-    "photo": "/structure/apparat/М. В. Барсукова.JPG",
+    "photo": "/structure-safe/photo-13.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -156,7 +156,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8-962-330-20-11, @vrepp",
     "email": "",
-    "photo": "/structure/apparat/В. А. Репп.JPG",
+    "photo": "/structure-safe/photo-14.jpg",
     "photoScale": 2.0,
     "directionLogo": "/svg/directions/default-logo.svg"
   },
@@ -166,7 +166,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8-930-700-13-90, @kseniapiskareva",
     "email": "",
-    "photo": "/structure/apparat/К. В. Пискарева.jpg",
+    "photo": "/structure-safe/photo-15.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -175,7 +175,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8-905-049-15-11, @ai_sokolova",
     "email": "",
-    "photo": "/structure/apparat/А. И. Соколова.jpg",
+    "photo": "/structure-safe/photo-16.jpg",
     "photoScale": 1.8,
     "directionLogo": "/svg/directions/default-logo.svg"
   },
@@ -185,7 +185,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8 -951-191-51-72, @strelkovaan",
     "email": "",
-    "photo": "/structure/apparat/А. О. Стрелкова.JPG",
+    "photo": "/structure-safe/photo-17.jpg",
     "photoScale": 1.8,
     "directionLogo": "/svg/directions/default-logo.svg"
   },
@@ -195,7 +195,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8-961-088-27-25, @aleksisss_a",
     "email": "",
-    "photo": "/structure/apparat/А. В. Алексенко .JPG",
+    "photo": "/structure-safe/photo-18.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -204,7 +204,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Аппарат МООО «РСО»",
     "phone": "8-913-742-31-48, @maryzor99",
     "email": "",
-    "photo": "/structure/apparat/М.А. Зорина.JPG",
+    "photo": "/structure-safe/photo-19.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -213,7 +213,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Комиссарский отдел",
     "phone": "8-903-674-00-05, @brodygina",
     "email": "",
-    "photo": "/structure/commissar/В. В. Бродягина.jpg",
+    "photo": "/structure-safe/photo-20.jpg",
     "photoScale": 1.6,
     "directionLogo": "/svg/directions/default-logo.svg"
   },
@@ -223,7 +223,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Комиссарский отдел",
     "phone": "8-905-907-26-00, @dzhan97",
     "email": "",
-    "photo": "/structure/commissar/А. В. Джанхотова.JPG",
+    "photo": "/structure-safe/photo-21.jpg",
     "photoScale": 1.8,
     "directionLogo": "/svg/directions/default-logo.svg"
   },
@@ -233,7 +233,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Комиссарский отдел",
     "phone": "8-985-800-80-65, @irinagromoth",
     "email": "",
-    "photo": "/structure/commissar/И. А. Громова.JPG",
+    "photo": "/structure-safe/photo-22.jpg",
     "photoScale": 2.5,
     "directionLogo": "/svg/directions/default-logo.svg"
   },
@@ -243,7 +243,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Комиссарский отдел",
     "phone": "8-995-087-75-33, @shilmur",
     "email": "",
-    "photo": "/structure/commissar/И. М. Шахметов.jpg",
+    "photo": "/structure-safe/photo-23.jpg",
     "photoScale": 1.7,
     "photoOrigin": "50% 20%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -254,7 +254,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Комиссарский отдел",
     "phone": "8-968-754-34-35, @anneoleynikova",
     "email": "",
-    "photo": "/structure/commissar/А. А. Олейникова.jpg",
+    "photo": "/structure-safe/photo-24.jpg",
     "photoScale": 2.2,
     "photoOrigin": "60% 30%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -265,7 +265,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-908-117-05-36, @Bozhena_Kolachevskaya",
     "email": "",
-    "photo": "/structure/pr/Б. А. Колачевская.jpg",
+    "photo": "/structure-safe/photo-25.jpg",
     "photoScale": 1.8,
     "directionLogo": "/svg/directions/pr-color.svg"
   },
@@ -275,7 +275,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-993-016-90-78",
     "email": "",
-    "photo": "/structure/pr/А. Балбанова.png",
+    "photo": "/structure-safe/photo-26.png",
     "photoScale": 1.8,
     "directionLogo": "/svg/directions/pr-color.svg"
   },
@@ -285,7 +285,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-913-584-33-78, @Zlata_PR_RSO",
     "email": "",
-    "photo": "/structure/pr/З. Ю. Горлышкина.JPG",
+    "photo": "/structure-safe/photo-27.jpg",
     "photoScale": 2.3,
     "photoPosition": "left top",
     "photoOrigin": "50% 20%",
@@ -297,7 +297,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-981-458-12-11, @kiss_love_a_39",
     "email": "",
-    "photo": "/structure/pr/Н.С. Лобойко.png",
+    "photo": "/structure-safe/photo-28.png",
     "photoScale": 1.1,
     "directionLogo": "/svg/directions/pr-color.svg"
   },
@@ -307,7 +307,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-999-632-17-43, @nutty_shorty",
     "email": "",
-    "photo": "/structure/pr/А. Д. Коротецкая.png",
+    "photo": "/structure-safe/photo-29.png",
     "photoScale": 1.9,
     "photoPosition": "left top",
     "photoOrigin": "50% 20%",
@@ -319,7 +319,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-913-646-16-44, @alinabask",
     "email": "",
-    "photo": "/structure/pr/А. О. Дубровская.jpg",
+    "photo": "/structure-safe/photo-30.jpg",
     "photoScale": 2.2,
     "photoPosition": "left top",
     "photoOrigin": "50% 20%",
@@ -331,7 +331,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-909-440-00-83 , @rusitdikov",
     "email": "",
-    "photo": "/structure/pr/Р. М. Ситдиков.jpg",
+    "photo": "/structure-safe/photo-31.jpg",
     "photoScale": 2.0,
     "photoOrigin": "50% 5%",
     "directionLogo": "/svg/directions/pr-color.svg"
@@ -342,7 +342,7 @@ export const centralMembers: CentralMember[] = [
     "group": "PR-отдел",
     "phone": "8-953-391-63-77",
     "email": "",
-    "photo": "/structure/pr/М.А. Приходько.png",
+    "photo": "/structure-safe/photo-32.png",
     "photoScale": 1.8,
     "directionLogo": "/svg/directions/pr-color.svg"
   },
@@ -352,7 +352,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел регионального взаимодействия",
     "phone": "8-962-818-68-82, @alinastoma",
     "email": "",
-    "photo": "/structure/regions/А. А. Стома.JPG",
+    "photo": "/structure-safe/photo-33.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -361,7 +361,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел регионального взаимодействия",
     "phone": "8-992-290-03-09, @ytuta2",
     "email": "",
-    "photo": "/structure/regions/А.С. Косаржевский .jpg",
+    "photo": "/structure-safe/photo-34.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -370,7 +370,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел регионального взаимодействия",
     "phone": "8-926-257-12-10, @anastasia_malianova",
     "email": "",
-    "photo": "/structure/regions/А. Ю. Малянова.JPG",
+    "photo": "/structure-safe/photo-35.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -379,7 +379,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел регионального взаимодействия",
     "phone": "8-967-761-21-94",
     "email": "",
-    "photo": "/structure/regions/М.Р. Муругова .JPG",
+    "photo": "/structure-safe/photo-36.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -388,7 +388,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел регионального взаимодействия",
     "phone": "8-912-767-10-32, @tatyanakubasheva",
     "email": "",
-    "photo": "/structure/regions/Т. Н. Кубашева.JPG",
+    "photo": "/structure-safe/photo-37.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -397,7 +397,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-918-903-95-91, @Ane4ka_Yablokova",
     "email": "",
-    "photo": "/structure/education/А. В. Яблокова.jpg",
+    "photo": "/structure-safe/photo-38.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -408,7 +408,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-988-409-49-71, @ElizZver",
     "email": "",
-    "photo": "/structure/education/Е. В. Зверкова.JPG",
+    "photo": "/structure-safe/photo-39.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -428,7 +428,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-914-725-35-46, @am_rokina",
     "email": "",
-    "photo": "/structure/education/А. М. Рокина.JPG",
+    "photo": "/structure-safe/photo-40.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -439,7 +439,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-912-155-86-63, @harizako",
     "email": "",
-    "photo": "/structure/education/А. Д. Рочева.JPG",
+    "photo": "/structure-safe/photo-41.jpg",
     "photoScale": 2.3,
     "photoOrigin": "30% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -450,7 +450,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-923-678-42-55, @AnnaRovnina",
     "email": "",
-    "photo": "/structure/education/А. В. Ровнина.jpg",
+    "photo": "/structure-safe/photo-42.jpg",
     "photoScale": 2.2,
     "photoOrigin": "60% 30%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -461,7 +461,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-913-657-81-87, @Semerenko_Anna",
     "email": "",
-    "photo": "/structure/education/А. В. Семеренко.jpg",
+    "photo": "/structure-safe/photo-43.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -472,7 +472,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-918-602-14-07, @OlyaYurova",
     "email": "",
-    "photo": "/structure/education/О. А. Юрова.jpg",
+    "photo": "/structure-safe/photo-44.jpg",
     "photoScale": 1.4,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -483,7 +483,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-969-974-81-39, @AlenaPazhetnykh",
     "email": "",
-    "photo": "/structure/education/А. Д. Пажетных.jpg",
+    "photo": "/structure-safe/photo-45.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -494,7 +494,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-913-656-36-11, @VinnieKZ",
     "email": "",
-    "photo": "/structure/education/С. И. Ляхова.jpg",
+    "photo": "/structure-safe/photo-46.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -505,7 +505,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-927-422-51-09, @mira_fdi",
     "email": "",
-    "photo": "/structure/education/Д. И. Фатыхова.JPG",
+    "photo": "/structure-safe/photo-47.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 40%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -516,7 +516,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-910-357-32-44, @Anarusheva",
     "email": "",
-    "photo": "/structure/education/А. Ю. Давиденко.jpg",
+    "photo": "/structure-safe/photo-48.jpg",
     "photoScale": 2.2,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -545,7 +545,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел реализации мероприятий по профобучению",
     "phone": "8-917-221-64-17, @I1KV1",
     "email": "",
-    "photo": "/structure/education/К. В. Ислаев.jpg",
+    "photo": "/structure-safe/photo-49.jpg",
     "photoScale": 1.4,
     "photoOrigin": "50% 10%",
     "directionLogo": "/svg/directions/default-logo.svg"
@@ -556,7 +556,7 @@ export const centralMembers: CentralMember[] = [
     "group": "АНО ДПО «РСО-Развитие»",
     "phone": "8-912-747-45-30, @mariiakorn",
     "email": "",
-    "photo": "/structure/razvitie/М. А. Корнилова.JPG",
+    "photo": "/structure-safe/photo-50.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -565,7 +565,7 @@ export const centralMembers: CentralMember[] = [
     "group": "АНО ДПО «РСО-Развитие»",
     "phone": "8-913-883-96-46",
     "email": "",
-    "photo": "/structure/razvitie/М.В. Меркулова.jpg",
+    "photo": "/structure-safe/photo-51.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -574,7 +574,7 @@ export const centralMembers: CentralMember[] = [
     "group": "АНО ДПО «РСО-Развитие»",
     "phone": "8-925-874-21-45, @kh_vlrshka",
     "email": "",
-    "photo": "/structure/razvitie/В. О. Хмелевская.JPG",
+    "photo": "/structure-safe/photo-52.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -583,7 +583,7 @@ export const centralMembers: CentralMember[] = [
     "group": "АНО ДПО «РСО-Развитие»",
     "phone": "8-902-909-21-74",
     "email": "",
-    "photo": "/structure/razvitie/В.С. Шамшина.jpg",
+    "photo": "/structure-safe/photo-53.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -592,7 +592,7 @@ export const centralMembers: CentralMember[] = [
     "group": "АНО ДПО «РСО-Развитие»",
     "phone": "8-951-409-62-95",
     "email": "",
-    "photo": "/structure/razvitie/П. А. Дунаевская.JPG",
+    "photo": "/structure-safe/photo-54.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -610,7 +610,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Фонд поддержки движения",
     "phone": "8-912-017-05-79, @travel_ksy",
     "email": "",
-    "photo": "/structure/fond/К. П. Юрченко.JPG",
+    "photo": "/structure-safe/photo-55.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -619,7 +619,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-919-725-55-65, @Evgeniy_Potemin",
     "email": "",
-    "photo": "/structure/engineering/Е. А. Потемин.jpg",
+    "photo": "/structure-safe/photo-56.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -628,7 +628,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-963-454-77-45, @Zabolotskikh_Aleksandr",
     "email": "",
-    "photo": "/structure/engineering/А. В. Заболотских.jpg",
+    "photo": "/structure-safe/photo-57.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -637,7 +637,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-919-685-96-90, @ozornayana",
     "email": "",
-    "photo": "/structure/engineering/Я. А. Азарченко.JPG",
+    "photo": "/structure-safe/photo-58.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -646,7 +646,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-915-616-19-11, @chicherovao",
     "email": "",
-    "photo": "/structure/engineering/О. А. Чичерова.jpg",
+    "photo": "/structure-safe/photo-59.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -655,7 +655,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-912-681-00-85, @artemoresh",
     "email": "",
-    "photo": "/structure/engineering/А. А. Орешкин.jpg",
+    "photo": "/structure-safe/photo-60.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -664,7 +664,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-901-272-79-07, @xeniaoverdosse",
     "email": "",
-    "photo": "/structure/engineering/К. Л. Печникова.JPG",
+    "photo": "/structure-safe/photo-61.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -673,7 +673,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-952-605-95-06",
     "email": "",
-    "photo": "/structure/engineering/Э. Ю. Олейник.jpg",
+    "photo": "/structure-safe/photo-62.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -682,7 +682,7 @@ export const centralMembers: CentralMember[] = [
     "group": "ООО «РСО Инжиниринг»",
     "phone": "8-909-089-02-08, @a_khayatova",
     "email": "",
-    "photo": "/structure/engineering/А. С. Хаятова.jpg",
+    "photo": "/structure-safe/photo-63.jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
@@ -691,7 +691,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Кол-центр",
     "phone": "8-913-144-36-35, @annakorotkova11076",
     "email": "",
-    "photo": "/structure/callcenter/А. К. Короткова .jpg",
+    "photo": "/structure-safe/photo-64.jpg",
     "photoScale": 1.8,
     "photoPosition": "left top",
     "photoOrigin": "40% 20%",
