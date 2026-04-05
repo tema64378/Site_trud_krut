@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1440">
+<title>Центральный штаб РСО — Структура</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #F4F4F6;
+    color: #1A1A1A;
+    min-width: 1440px;
+  }
+
+  /* ── HEADER ── */
+  .page-header {
+    background: #8B1A1A;
+    padding: 48px 80px 40px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .page-header__logo {
+    width: 64px;
+    height: 64px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1px;
+    flex-shrink: 0;
+  }
+  .page-header__text h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+  }
+  .page-header__text p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.7);
+    margin-top: 6px;
+  }
+
+  /* ── MAIN ── */
+  .main {
+    padding: 48px 80px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  /* ── GROUP SECTION ── */
+  .group {
+    margin-bottom: 56px;
+  }
+  .group__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #E8E8EC;
+  }
+  .group__badge {
+    width: 8px;
+    height: 40px;
+    background: #8B1A1A;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .group__title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1A1A1A;
+    letter-spacing: -0.3px;
+  }
+  .group__count {
+    font-size: 14px;
+    color: #888;
+    background: #ECECF0;
+    border-radius: 20px;
+    padding: 3px 12px;
+    font-weight: 600;
+    margin-left: auto;
+  }
+
+  /* ── GRID ── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+    min-height: 140px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Leadership card — bigger */
+  .card--leader {
+    grid-column: span 3;
+    background: linear-gradient(135deg, #8B1A1A 0%, #6B1212 100%);
+    min-height: 160px;
+  }
+  .card--leader .card__name { color: #fff; font-size: 20px; }
+  .card--leader .card__role { color: rgba(255,255,255,0.75); }
+  .card--leader .card__phone { color: rgba(255,255,255,0.6); }
+  .card--leader .card__initials {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+  }
+
+  .card__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+  }
+  .card__name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1A1A1A;
+    line-height: 1.3;
+    letter-spacing: -0.2px;
+  }
+  .card__role {
+    font-size: 12.5px;
+    color: #666;
+    line-height: 1.4;
+  }
+  .card__phone {
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+
+  .card__photo-wrap {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #F0F0F4;
+    align-self: center;
+  }
+  .card__photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+  .card__initials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: #8B1A1A;
+    background: #F5EDED;
+    border-radius: 12px;
+  }
+
+  /* Leader variant photo — larger */
+  .card--leader .card__photo-wrap {
+    width: 120px;
+    height: 120px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <div class="page-header__logo">РСО</div>
+  <div class="page-header__text">
+    <h1>Центральный штаб МООО «РСО»</h1>
+    <p>Структура организации — полный состав сотрудников</p>
+  </div>
+</div>
+
+<div class="main" id="root"></div>
+
+<script>
+const BASE = 'http://localhost:3001';
+
+const members = [
+  // ── Руководство Центрального штаба ──
+  { name: "Зубащенко Ярослав Викторович", role: "Командир ЦШ МООО «РСО»", group: "Руководство Центрального штаба", phone: "8-903-025-40-10", photo: "/structure/Я. В. Зубащенко_Командир Центрального штаба Российских студенческих отрядов.jpg", leader: true },
+  { name: "Позднякова Юлия Евгеньевна", role: "Комиссар ЦШ МООО «РСО»", group: "Руководство Центрального штаба", phone: "8-913-635-25-29", photo: "/structure/Ю. Е. Позднякова_Комиссар Центрального штаба Российских студенческих отрядов.JPG", leader: true },
+
+  // ── Аппарат МООО «РСО» ──
+  { name: "Барсукова Маргарита Владимировна", role: "Руководитель Аппарата МООО «РСО»", group: "Аппарат МООО «РСО»", phone: "8-983-385-15-44", photo: "/structure/apparat/М. В. Барсукова.JPG" },
+  { name: "Репп Владимир Александрович", role: "Заместитель Руководителя Аппарата МООО «РСО»", group: "Аппарат МООО «РСО»", phone: "8-962-330-20-11", photo: "/structure/apparat/В. А. Репп.JPG" },
+  { name: "Пискарева Ксения Викторовна", role: "Руководитель направления международного сотрудничества и партнёрских программ", group: "Аппарат МООО «РСО»", phone: "8-930-700-13-90", photo: "/structure/apparat/К. В. Пискарева.jpg" },
+  { name: "Соколова Анастасия Игоревна", role: "Советник Руководителя (командира) Центрального штаба", group: "Аппарат МООО «РСО»", phone: "8-905-049-15-11", photo: "/structure/apparat/А. И. Соколова.jpg" },
+  { name: "Стрелкова Анна Олеговна", role: "Специалист Аппарата МООО «РСО» (бухгалтер)", group: "Аппарат МООО «РСО»", phone: "8-951-191-51-72", photo: "/structure/apparat/А. О. Стрелкова.JPG" },
+  { name: "Алексенко Анна Викторовна", role: "Специалист Аппарата МООО «РСО»", group: "Аппарат МООО «РСО»", phone: "8-961-088-27-25", photo: "/structure/apparat/А. В. Алексенко .JPG" },
+  { name: "Зорина Мария Александровна", role: "Специалист Аппарата МООО «РСО»", group: "Аппарат МООО «РСО»", phone: "8-913-742-31-48", photo: "/structure/apparat/М.А. Зорина.JPG" },
+
+  // ── Комиссарский отдел ──
+  { name: "Бродягина Валентина Валерьевна", role: "Ведущий специалист Аппарата МООО «РСО»", group: "Комиссарский отдел", phone: "8-903-674-00-05", photo: "/structure/commissar/В. В. Бродягина.jpg" },
+  { name: "Джанхотова Анна Васильевна", role: "Специалист Аппарата МООО «РСО»", group: "Комиссарский отдел", phone: "8-905-907-26-00", photo: "/structure/commissar/А. В. Джанхотова.JPG" },
+  { name: "Громова Ирина Артёмовна", role: "Специалист Аппарата МООО «РСО»", group: "Комиссарский отдел", phone: "8-985-800-80-65", photo: "/structure/commissar/И. А. Громова.JPG" },
+  { name: "Шахметов Ильяс Муратович", role: "Специалист Аппарата МООО «РСО»", group: "Комиссарский отдел", phone: "8-995-087-75-33", photo: "/structure/commissar/И. М. Шахметов.jpg" },
+  { name: "Олейникова Анна Анатольевна", role: "Специалист Аппарата МООО «РСО»", group: "Комиссарский отдел", phone: "8-968-754-34-35", photo: "/structure/commissar/А. А. Олейникова.jpg" },
+
+  // ── PR-отдел ──
+  { name: "Колачевская Божена Андреевна", role: "Руководитель PR-отдела МООО «РСО»", group: "PR-отдел", phone: "8-908-117-05-36", photo: "/structure/pr/Б. А. Колачевская.jpg" },
+  { name: "Балбанова Альбина", role: "Специалист PR-отдела, контент-менеджер соцсетей МООО «РСО»", group: "PR-отдел", phone: "8-993-016-90-78", photo: "/structure/pr/А. Балбанова.png" },
+  { name: "Горлышкина Злата Юрьевна", role: "Специалист PR-отдела, координатор медиапроектов МООО «РСО»", group: "PR-отдел", phone: "8-913-584-33-78", photo: "/structure/pr/З. Ю. Горлышкина.JPG" },
+  { name: "Лобойко Наталья Сергеевна", role: "Специалист PR-отдела, ведущий райтер", group: "PR-отдел", phone: "8-981-458-12-11", photo: "/structure/pr/Н.С. Лобойко.png" },
+  { name: "Коротецкая Анастасия Дмитриевна", role: "Специалист PR-отдела по строительному направлению, райтер", group: "PR-отдел", phone: "8-999-632-17-43", photo: "/structure/pr/А. Д. Коротецкая.png" },
+  { name: "Дубровская Алина Олеговна", role: "Специалист PR-отдела по взаимодействию с Холдингом «РЖД»", group: "PR-отдел", phone: "8-913-646-16-44", photo: "/structure/pr/А. О. Дубровская.jpg" },
+  { name: "Ситдиков Руслан Марсельевич", role: "Специалист PR-отдела, дизайнер МООО «РСО»", group: "PR-отдел", phone: "8-909-440-00-83", photo: "/structure/pr/Р. М. Ситдиков.jpg" },
+  { name: "Приходько Максим Александрович", role: "Специалист PR-отдела, дизайнер, smm-менеджер канала MAX", group: "PR-отдел", phone: "8-953-391-63-77", photo: "/structure/pr/М.А. Приходько.png" },
+
+  // ── Отдел регионального взаимодействия ──
+  { name: "Стома Алина Андреевна", role: "И.о. руководителя отдела по взаимодействию и развитию регионов", group: "Отдел регионального взаимодействия", phone: "8-962-818-68-82", photo: "/structure/regions/А. А. Стома.JPG" },
+  { name: "Косаржевский Александр Сергеевич", role: "Специалист отдела по взаимодействию и развитию регионов", group: "Отдел регионального взаимодействия", phone: "8-992-290-03-09", photo: "/structure/regions/А.С. Косаржевский .jpg" },
+  { name: "Малянова Анастасия Юрьевна", role: "Специалист отдела по взаимодействию и развитию регионов", group: "Отдел регионального взаимодействия", phone: "8-926-257-12-10", photo: "/structure/regions/А. Ю. Малянова.JPG" },
+  { name: "Муругова Милана Романовна", role: "Специалист отдела по взаимодействию и развитию регионов", group: "Отдел регионального взаимодействия", phone: "8-967-761-21-94", photo: "/structure/regions/М.Р. Муругова .JPG" },
+  { name: "Кубашева Татьяна Николаевна", role: "Специалист отдела по взаимодействию и развитию регионов", group: "Отдел регионального взаимодействия", phone: "8-912-767-10-32", photo: "/structure/regions/Т. Н. Кубашева.JPG" },
+
+  // ── Отдел реализации мероприятий по профобучению ──
+  { name: "Яблокова Анна Владимировна", role: "Руководитель отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-918-903-95-91", photo: "/structure/education/А. В. Яблокова.jpg" },
+  { name: "Зверкова Елизавета Владимировна", role: "Ведущий специалист по организационно-техническому обеспечению предоставления грантов", group: "Отдел реализации мероприятий по профобучению", phone: "8-988-409-49-71", photo: "/structure/education/Е. В. Зверкова.JPG" },
+  { name: "Зотова Наталия Викторовна", role: "Заместитель руководителя отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-917-672-72-38", photo: "" },
+  { name: "Рокина Анастасия Михайловна", role: "Ведущий специалист по казначейскому сопровождению и обеспечению выплат", group: "Отдел реализации мероприятий по профобучению", phone: "8-914-725-35-46", photo: "/structure/education/А. М. Рокина.JPG" },
+  { name: "Рочева Алена Дмитриевна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-912-155-86-63", photo: "/structure/education/А. Д. Рочева.JPG" },
+  { name: "Ровнина Анна Васильевна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-923-678-42-55", photo: "/structure/education/А. В. Ровнина.jpg" },
+  { name: "Семеренко Анна Валерьевна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-913-657-81-87", photo: "/structure/education/А. В. Семеренко.jpg" },
+  { name: "Юрова Ольга Анатольевна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-918-602-14-07", photo: "/structure/education/О. А. Юрова.jpg" },
+  { name: "Пажетных Алена Дмитриевна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-969-974-81-39", photo: "/structure/education/А. Д. Пажетных.jpg" },
+  { name: "Ляхова Светлана Игоревна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-913-656-36-11", photo: "/structure/education/С. И. Ляхова.jpg" },
+  { name: "Фатыхова Дамира Ильфатовна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-927-422-51-09", photo: "/structure/education/Д. И. Фатыхова.JPG" },
+  { name: "Давиденко Анастасия Юрьевна", role: "Методист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-910-357-32-44", photo: "/structure/education/А. Ю. Давиденко.jpg" },
+  { name: "Анпилогова Валерия Евгеньевна", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-988-534-04-53", photo: "" },
+  { name: "Филатова Диана Дмитриевна", role: "Методист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-950-856-58-69", photo: "" },
+  { name: "Ислаев Константин Васильевич", role: "Специалист отдела реализации мероприятий по профобучению", group: "Отдел реализации мероприятий по профобучению", phone: "8-917-221-64-17", photo: "/structure/education/К. В. Ислаев.jpg" },
+
+  // ── Руководители направлений ──
+  { name: "Коротков Дмитрий Олегович", role: "Руководитель Студенческих отрядов проводников", group: "Руководители направлений", phone: "8-961-880-99-55", photo: "/structure/directions/Д. О. Коротков.jpg" },
+  { name: "Шалыгин Андрей Викторович", role: "Руководитель Студенческих строительных отрядов", group: "Руководители направлений", phone: "8-999-469-18-05", photo: "/structure/directions/А. В. Шалыгин.JPG" },
+  { name: "Блюмин Алексей Александрович", role: "Руководитель Студенческих сельскохозяйственных отрядов", group: "Руководители направлений", phone: "8-906-887-55-63", photo: "/structure/directions/А. А. Блюмин.jpg" },
+  { name: "Шайкин Павел Александрович", role: "Руководитель Студенческих путинных отрядов", group: "Руководители направлений", phone: "8-914-197-93-56", photo: "/structure/directions/П. А. Шайкин.png" },
+  { name: "Грязнова Екатерина Александровна", role: "Руководитель Студенческих сервисных отрядов", group: "Руководители направлений", phone: "8-952-805-05-80", photo: "/structure/directions/Е. А. Грязнова.JPG" },
+  { name: "Комарова Полина Евгеньевна", role: "Руководитель направления Студенческих педагогических отрядов", group: "Руководители направлений", phone: "8-908-794-10-76", photo: "/structure/directions/П. Е. Комарова.JPG" },
+  { name: "Рыбакова Маргарита Николаевна", role: "Руководитель Трудовых отрядов подростков", group: "Руководители направлений", phone: "8-960-303-56-22", photo: "/structure/directions/М. Н. Рыбакова.JPG" },
+  { name: "Сальникова Ирина Андреевна", role: "Руководитель направления СМО ЦШ МООО «РСО»", group: "Руководители направлений", phone: "8-909-517-34-37", photo: "/structure/directions/И. А. Сальникова.PNG" },
+  { name: "Пасенкова Варвара Николаевна", role: "Руководитель Студенческих отрядов железнодорожного транспорта", group: "Руководители направлений", phone: "8-999-459-87-74", photo: "/structure/directions/В. Н. Пасенкова.jpg" },
+  { name: "Живой Владимир Андреевич", role: "Заместитель руководителя Студенческих сельскохозяйственных отрядов", group: "Руководители направлений", phone: "8-918-546-32-68", photo: "/structure/directions/В. А. Живой.PNG" },
+
+  // ── АНО ДПО «РСО-Развитие» ──
+  { name: "Корнилова Мария Андреевна", role: "Директор АНО ДПО «РСО-РАЗВИТИЕ»", group: "АНО ДПО «РСО-Развитие»", phone: "8-912-747-45-30", photo: "/structure/razvitie/М. А. Корнилова.JPG" },
+  { name: "Меркулова Мария Вячеславовна", role: "Заместитель директора АНО ДПО «РСО-РАЗВИТИЕ»", group: "АНО ДПО «РСО-Развитие»", phone: "8-913-883-96-46", photo: "/structure/razvitie/М.В. Меркулова.jpg" },
+  { name: "Хмелевская Валерия Олеговна", role: "Куратор корпоративного университета АНО ДПО «РСО-Развитие»", group: "АНО ДПО «РСО-Развитие»", phone: "8-925-874-21-45", photo: "/structure/razvitie/В. О. Хмелевская.JPG" },
+  { name: "Шамшина Виктория Сергеевна", role: "Бренд-менеджер ТрудКрутШопа (АНО ДПО РСО-РАЗВИТИЕ)", group: "АНО ДПО «РСО-Развитие»", phone: "8-902-909-21-74", photo: "/structure/razvitie/В.С. Шамшина.jpg" },
+  { name: "Дунаевская Полина Александровна", role: "Бренд-менеджер ТрудКрутШопа (АНО ДПО РСО-РАЗВИТИЕ)", group: "АНО ДПО «РСО-Развитие»", phone: "8-951-409-62-95", photo: "/structure/razvitie/П. А. Дунаевская.JPG" },
+  { name: "Сидорова Алина Михайловна", role: "Руководитель отдела по созданию контента ДПО «РСО-Развитие», руководитель Лук продакшн", group: "АНО ДПО «РСО-Развитие»", phone: "8-968-416-90-08", photo: "" },
+
+  // ── Фонд поддержки движения ──
+  { name: "Юрченко Ксения Петровна", role: "Директор Фонда поддержки и развития движения студенческих отрядов", group: "Фонд поддержки движения", phone: "8-912-017-05-79", photo: "/structure/fond/К. П. Юрченко.JPG" },
+
+  // ── Кол-центр ──
+  { name: "Короткова Анна Константиновна", role: "Руководитель кол-центра МООО «РСО»", group: "Кол-центр", phone: "8-913-144-36-35", photo: "/structure/callcenter/А. К. Короткова .jpg" },
+
+  // ── ООО «РСО Инжиниринг» ──
+  { name: "Потемин Евгений Александрович", role: "Генеральный директор ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-919-725-55-65", photo: "/structure/engineering/Е. А. Потемин.jpg" },
+  { name: "Заболотских Александр Владимирович", role: "Заместитель генерального директора ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-963-454-77-45", photo: "/structure/engineering/А. В. Заболотских.jpg" },
+  { name: "Азарченко Яна Андреевна", role: "Заместитель генерального директора по направлению HoReCa ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-919-685-96-90", photo: "/structure/engineering/Я. А. Азарченко.JPG" },
+  { name: "Чичерова Ольга Александровна", role: "Руководитель отдела администрирования проектов ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-915-616-19-11", photo: "/structure/engineering/О. А. Чичерова.jpg" },
+  { name: "Орешкин Артем Александрович", role: "Руководитель отдела реализации проектов ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-912-681-00-85", photo: "/structure/engineering/А. А. Орешкин.jpg" },
+  { name: "Печникова Ксения Леонидовна", role: "Специалист по связям с общественностью ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-901-272-79-07", photo: "/structure/engineering/К. Л. Печникова.JPG" },
+  { name: "Олейник Эмиль Юрьевич", role: "Специалист ООО «РСО Инжиниринг» по HoReCa", group: "ООО «РСО Инжиниринг»", phone: "8-952-605-95-06", photo: "/structure/engineering/Э. Ю. Олейник.jpg" },
+  { name: "Хаятова Алина Сергеевна", role: "Администратор проектов ООО «РСО Инжиниринг»", group: "ООО «РСО Инжиниринг»", phone: "8-909-089-02-08", photo: "/structure/engineering/А. С. Хаятова.jpg" },
+];
+
+const groupOrder = [
+  "Руководство Центрального штаба",
+  "Аппарат МООО «РСО»",
+  "Комиссарский отдел",
+  "PR-отдел",
+  "Отдел регионального взаимодействия",
+  "Отдел реализации мероприятий по профобучению",
+  "Руководители направлений",
+  "АНО ДПО «РСО-Развитие»",
+  "Фонд поддержки движения",
+  "Кол-центр",
+  "ООО «РСО Инжиниринг»"
+];
+
+function getInitials(name) {
+  return name.split(' ').map(p => p[0]).join('').slice(0, 2).toUpperCase();
+}
+
+function cleanPhone(phone) {
+  return phone ? phone.replace(/@[\w\d_]+/g, '').replace(/,\s*$/, '').trim() : '';
+}
+
+function renderCard(m) {
+  const isLeader = m.leader;
+  const initials = getInitials(m.name);
+  const phone = cleanPhone(m.phone);
+  const photoSrc = m.photo ? BASE + m.photo : '';
+
+  const photoHtml = photoSrc
+    ? `<div class="card__photo-wrap"><img src="${photoSrc}" alt="${m.name}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\\"card__initials\\">${initials}</div>'"></div>`
+    : `<div class="card__photo-wrap"><div class="card__initials">${initials}</div></div>`;
+
+  return `
+    <div class="card${isLeader ? ' card--leader' : ''}">
+      <div class="card__info">
+        <div class="card__name">${m.name}</div>
+        <div class="card__role">${m.role}</div>
+        ${phone ? `<div class="card__phone">${phone}</div>` : ''}
+      </div>
+      ${photoHtml}
+    </div>`;
+}
+
+const root = document.getElementById('root');
+
+for (const groupName of groupOrder) {
+  const group = members.filter(m => m.group === groupName);
+  if (!group.length) continue;
+
+  const section = document.createElement('section');
+  section.className = 'group';
+
+  section.innerHTML = `
+    <div class="group__header">
+      <div class="group__badge"></div>
+      <h2 class="group__title">${groupName}</h2>
+      <span class="group__count">${group.length}</span>
+    </div>
+    <div class="grid">
+      ${group.map(renderCard).join('')}
+    </div>`;
+
+  root.appendChild(section);
+}
+</script>
+</body>
+</html>

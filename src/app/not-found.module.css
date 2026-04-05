@@ -1,0 +1,117 @@
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: var(--color-text-secondary, #666);
+  margin-bottom: 2rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-primary, #0804ff);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.primary:hover {
+  opacity: 0.85;
+}
+
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  border: 1.5px solid var(--color-primary, #0804ff);
+  color: var(--color-primary, #0804ff);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s;
+}
+
+.secondary:hover {
+  background: var(--color-primary, #0804ff);
+  color: #fff;
+}
+
+.illustration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.solarSystem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+}
+
+.solarLight {
+  display: block;
+}
+
+.solarDark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .solarLight {
+    display: none;
+  }
+
+  .solarDark {
+    display: block;
+  }
+}
+
+.sunDarkImage {
+  filter: brightness(1.2);
+}
+
+.sun {
+  filter: drop-shadow(0 0 20px rgba(255, 200, 0, 0.6));
+}
+
+.orbit {
+  fill: none;
+  stroke: rgba(8, 4, 255, 0.28);
+  stroke-width: 1;
+}

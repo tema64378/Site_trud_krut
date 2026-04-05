@@ -1,0 +1,41 @@
+.navItemWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-card, #fff);
+  border: 1px solid var(--color-border, #e5e7eb);
+  border-radius: 12px;
+  padding: 0.5rem;
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+  z-index: 100;
+}
+
+.submenuOpen {
+  display: flex;
+}
+
+.submenuItem {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--color-text, #111);
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.submenuItem:hover {
+  background: var(--color-bg-subtle, #f3f4f6);
+}

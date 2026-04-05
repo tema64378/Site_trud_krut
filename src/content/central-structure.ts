@@ -1,0 +1,714 @@
+export type CentralMember = {
+  name: string;
+  role: string;
+  group: string;
+  phone?: string;
+  email?: string;
+  photo?: string;
+  photoScale?: number;
+  photoPosition?: string;
+  photoOrigin?: string;
+  directionLogo?: string;
+  directionLogoStyle?: 'corner' | 'pattern';
+};
+
+export const centralMembers: CentralMember[] = [
+  {
+    "name": "Зубащенко Ярослав Викторович",
+    "role": "Командир ЦШ МООО «РСО»",
+    "group": "Руководство Центрального штаба",
+    "phone": "8-903-025-40-10, @yaroslav_zubashchenko",
+    "email": "",
+    "photo": "/structure/Я. В. Зубащенко_Командир Центрального штаба Российских студенческих отрядов.jpg",
+    "photoScale": 2.5,
+    "photoOrigin": "50% 20%",
+    "directionLogo": "/svg/directions/zubashchenko-logo.svg",
+    "directionLogoStyle": "corner"
+  },
+  {
+    "name": "Позднякова Юлия Евгеньевна",
+    "role": "Комиссар ЦШ МООО «РСО»",
+    "group": "Руководство Центрального штаба",
+    "phone": "8-913-635-25-29, @yulyapozdno",
+    "email": "",
+    "photo": "/structure/Ю. Е. Позднякова_Комиссар Центрального штаба Российских студенческих отрядов.JPG",
+    "photoScale": 1.4,
+    "directionLogo": "/svg/directions/pozdnyakova-logo.svg",
+    "directionLogoStyle": "pattern"
+  },
+  {
+    "name": "Коротков Дмитрий Олегович",
+    "role": "Руководитель Студенческих отрядов проводников",
+    "group": "Руководители направлений",
+    "phone": "8-961-880-99-55, @celyimir",
+    "email": "",
+    "photo": "/structure/directions/Д. О. Коротков.jpg",
+    "photoScale": 2.0,
+    "directionLogo": "/svg/directions/sop-color.svg"
+  },
+  {
+    "name": "Шалыгин Андреи Викторович",
+    "role": "Руководитель Студенческих строительных отрядов",
+    "group": "Руководители направлений",
+    "phone": "8-999-469-18-05, @AndreyShV",
+    "email": "",
+    "photo": "/structure/directions/А. В. Шалыгин.JPG",
+    "photoScale": 2.0,
+    "directionLogo": "/svg/directions/construction-color.svg"
+  },
+  {
+    "name": "Блюмин Алексеи Александрович",
+    "role": "Руководитель Студенческих сельскохозяйственных отрядов",
+    "group": "Руководители направлений",
+    "phone": "8-906-887-55-63, @aablumin",
+    "email": "",
+    "photo": "/structure/directions/А. А. Блюмин.jpg",
+    "photoScale": 2.2,
+    "directionLogo": "/svg/directions/agriculture-color.svg"
+  },
+  {
+    "name": "Шайкин Павел Александрович",
+    "role": "Руководитель Студенческих путинных отрядов",
+    "group": "Руководители направлений",
+    "phone": "8-914-197-93-56, @Shaikin_Pavel",
+    "email": "",
+    "photo": "/structure/directions/П. А. Шайкин.png",
+    "photoScale": 2.1,
+    "photoOrigin": "50% 34%",
+    "directionLogo": "/svg/directions/puting-color.svg"
+  },
+  {
+    "name": "Грязнова Екатерина Александровна",
+    "role": "Руководитель Студенческих сервисных отрядов",
+    "group": "Руководители направлений",
+    "phone": "8-952-805-05-80, @grznv_k",
+    "email": "",
+    "photo": "/structure/directions/Е. А. Грязнова.JPG",
+    "photoScale": 1.4,
+    "photoOrigin": "50% 34%",
+    "directionLogo": "/svg/directions/service-color.svg"
+  },
+  {
+    "name": "Комарова Полина Евгеньевна",
+    "role": "Руководитель направления Студенческих педагогических отрядов",
+    "group": "Руководители направлений",
+    "phone": "8-908-794-10-76, @polina423",
+    "email": "",
+    "photo": "/structure/directions/П. Е. Комарова.JPG",
+    "photoScale": 1.5,
+    "directionLogo": "/svg/directions/pedagogy-color.svg"
+  },
+  {
+    "name": "Рыбакова Маргарита Николаевна",
+    "role": "Руководитель Трудовых отрядов подростков",
+    "group": "Руководители направлений",
+    "phone": "8-960-303-56-22, @immortallem",
+    "email": "",
+    "photo": "/structure/directions/М. Н. Рыбакова.JPG",
+    "photoScale": 2.9,
+    "photoOrigin": "50% 24%",
+    "directionLogo": "/svg/directions/youth-color.svg"
+  },
+  {
+    "name": "Сальникова Ирина Андреевна",
+    "role": "Руководитель направления СМО ЦШ МООО «РСО»",
+    "group": "Руководители направлений",
+    "phone": "8-909-517-34-37, @iraidandko",
+    "email": "",
+    "photo": "/structure/directions/И. А. Сальникова.PNG",
+    "directionLogo": "/svg/directions/medical-color.svg",
+    "photoScale": 2.0,
+    "photoOrigin": "50% 30%"
+  },
+  {
+    "name": "Пасенкова Варвара Николаевна",
+    "role": "Руководитель Студенческих отрядов железнодорожного транспорта",
+    "group": "Руководители направлений",
+    "phone": "8-999-459-87-74, @V_N_Pasenkova",
+    "email": "",
+    "photo": "/structure/directions/В. Н. Пасенкова.jpg",
+    "photoScale": 2.3,
+    "directionLogo": "/svg/directions/railway-color.svg"
+  },
+  {
+    "name": "Живой Владимир Андреевич",
+    "role": "Заместитель руководителя Студенческих сельскохозяйственных отрядов",
+    "group": "Руководители направлений",
+    "phone": "8-918-546-32-68, @volodiyay",
+    "email": "",
+    "photo": "/structure/directions/В. А. Живой.PNG",
+    "photoScale": 2.5,
+    "photoOrigin": "50% 5%",
+    "directionLogo": "/svg/directions/agriculture-color.svg"
+  },
+  {
+    "name": "Барсукова Маргарита Владимировна",
+    "role": "Руководитель Аппарата МООО «РСО»",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8-983-385-15-44, @MargaritaBars25",
+    "email": "",
+    "photo": "/structure/apparat/М. В. Барсукова.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Репп Владимир Александрович",
+    "role": "Заместитель Руководителя Аппарата МООО «РСО»",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8-962-330-20-11, @vrepp",
+    "email": "",
+    "photo": "/structure/apparat/В. А. Репп.JPG",
+    "photoScale": 2.0,
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Пискарева Ксения Викторовна",
+    "role": "Руководитель направления международного сотрудничества и партнёрских программ",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8-930-700-13-90, @kseniapiskareva",
+    "email": "",
+    "photo": "/structure/apparat/К. В. Пискарева.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Соколова Анастасия Игоревна",
+    "role": "Советник Руководителя (командира) Центрального штаба",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8-905-049-15-11, @ai_sokolova",
+    "email": "",
+    "photo": "/structure/apparat/А. И. Соколова.jpg",
+    "photoScale": 1.8,
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Стрелкова Анна Олеговна",
+    "role": "Специалист Аппарата МООО «РСО» (бухгалтер)",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8 -951-191-51-72, @strelkovaan",
+    "email": "",
+    "photo": "/structure/apparat/А. О. Стрелкова.JPG",
+    "photoScale": 1.8,
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Алексенко Анна Викторовна",
+    "role": "Специалист Аппарата МООО «РСО»",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8-961-088-27-25, @aleksisss_a",
+    "email": "",
+    "photo": "/structure/apparat/А. В. Алексенко .JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Зорина Мария Александровна",
+    "role": "Специалист Аппарата МООО «РСО»",
+    "group": "Аппарат МООО «РСО»",
+    "phone": "8-913-742-31-48, @maryzor99",
+    "email": "",
+    "photo": "/structure/apparat/М.А. Зорина.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Бродягина Валентина Валерьевна",
+    "role": "Ведущий специалист Аппарата МООО «РСО»",
+    "group": "Комиссарский отдел",
+    "phone": "8-903-674-00-05, @brodygina",
+    "email": "",
+    "photo": "/structure/commissar/В. В. Бродягина.jpg",
+    "photoScale": 1.6,
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Джанхотова Анна Васильевна",
+    "role": "Специалист Аппарата МООО «РСО»",
+    "group": "Комиссарский отдел",
+    "phone": "8-905-907-26-00, @dzhan97",
+    "email": "",
+    "photo": "/structure/commissar/А. В. Джанхотова.JPG",
+    "photoScale": 1.8,
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Громова Ирина Артёмовна",
+    "role": "Специалист Аппарата МООО «РСО»",
+    "group": "Комиссарский отдел",
+    "phone": "8-985-800-80-65, @irinagromoth",
+    "email": "",
+    "photo": "/structure/commissar/И. А. Громова.JPG",
+    "photoScale": 2.5,
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Шахметов Ильяс Муратович",
+    "role": "Специалист Аппарата МООО «РСО»",
+    "group": "Комиссарский отдел",
+    "phone": "8-995-087-75-33, @shilmur",
+    "email": "",
+    "photo": "/structure/commissar/И. М. Шахметов.jpg",
+    "photoScale": 1.7,
+    "photoOrigin": "50% 20%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Олейникова Анна Анатольевна",
+    "role": "Специалист Аппарата МООО «РСО»",
+    "group": "Комиссарский отдел",
+    "phone": "8-968-754-34-35, @anneoleynikova",
+    "email": "",
+    "photo": "/structure/commissar/А. А. Олейникова.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "60% 30%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Колачевская Божена Андреевна",
+    "role": "Руководитель PR-отдела МООО «РСО»",
+    "group": "PR-отдел",
+    "phone": "8-908-117-05-36, @Bozhena_Kolachevskaya",
+    "email": "",
+    "photo": "/structure/pr/Б. А. Колачевская.jpg",
+    "photoScale": 1.8,
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Балбанова Альбина",
+    "role": "Специалист PR-отдела РСО, контент-менеджер социальных сетеи МООО «РСО»",
+    "group": "PR-отдел",
+    "phone": "8-993-016-90-78",
+    "email": "",
+    "photo": "/structure/pr/А. Балбанова.png",
+    "photoScale": 1.8,
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Горлышкина Злата Юрьевна",
+    "role": "Специалист PR-отдела РСО, координатор медиапроектов МООО «РСО»",
+    "group": "PR-отдел",
+    "phone": "8-913-584-33-78, @Zlata_PR_RSO",
+    "email": "",
+    "photo": "/structure/pr/З. Ю. Горлышкина.JPG",
+    "photoScale": 2.3,
+    "photoPosition": "left top",
+    "photoOrigin": "50% 20%",
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Лобойко Наталья Сергеевна",
+    "role": "Специалист PR-отдела РСО, ведущий райтер",
+    "group": "PR-отдел",
+    "phone": "8-981-458-12-11, @kiss_love_a_39",
+    "email": "",
+    "photo": "/structure/pr/Н.С. Лобойко.png",
+    "photoScale": 1.1,
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Коротецкая Анастасия Дмитриевна",
+    "role": "Специалист PR-отдела РСО по строительному направлению, райтер",
+    "group": "PR-отдел",
+    "phone": "8-999-632-17-43, @nutty_shorty",
+    "email": "",
+    "photo": "/structure/pr/А. Д. Коротецкая.png",
+    "photoScale": 1.9,
+    "photoPosition": "left top",
+    "photoOrigin": "50% 20%",
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Дубровская Алина Олеговна",
+    "role": "Специалист PR-отдела РСО по взаимодействию с Холдингом «РЖД»",
+    "group": "PR-отдел",
+    "phone": "8-913-646-16-44, @alinabask",
+    "email": "",
+    "photo": "/structure/pr/А. О. Дубровская.jpg",
+    "photoScale": 2.2,
+    "photoPosition": "left top",
+    "photoOrigin": "50% 20%",
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Ситдиков Руслан Марсельевич",
+    "role": "Специалист PR-отдела РСО, дизайнер МООО «РСО»",
+    "group": "PR-отдел",
+    "phone": "8-909-440-00-83 , @rusitdikov",
+    "email": "",
+    "photo": "/structure/pr/Р. М. Ситдиков.jpg",
+    "photoScale": 2.0,
+    "photoOrigin": "50% 5%",
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Приходько Максим Александрович",
+    "role": "специалист PR-отдела РСО, дизайнер, smm-менеджер канала MAX",
+    "group": "PR-отдел",
+    "phone": "8-953-391-63-77",
+    "email": "",
+    "photo": "/structure/pr/М.А. Приходько.png",
+    "photoScale": 1.8,
+    "directionLogo": "/svg/directions/pr-color.svg"
+  },
+  {
+    "name": "Стома Алина Андреевна",
+    "role": "Исполняющий обязанности руководителя отдела по взаимодействию и развитию регионов",
+    "group": "Отдел регионального взаимодействия",
+    "phone": "8-962-818-68-82, @alinastoma",
+    "email": "",
+    "photo": "/structure/regions/А. А. Стома.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Косаржевский Александр Сергеевич",
+    "role": "Специалист отдела по взаимодействию и развитию регионов",
+    "group": "Отдел регионального взаимодействия",
+    "phone": "8-992-290-03-09, @ytuta2",
+    "email": "",
+    "photo": "/structure/regions/А.С. Косаржевский .jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Малянова Анастасия Юрьевна",
+    "role": "Специалист отдела по взаимодействию и развитию регионов",
+    "group": "Отдел регионального взаимодействия",
+    "phone": "8-926-257-12-10, @anastasia_malianova",
+    "email": "",
+    "photo": "/structure/regions/А. Ю. Малянова.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Муругова Милана Романовна",
+    "role": "Специалист отдела по взаимодействию и развитию регионов",
+    "group": "Отдел регионального взаимодействия",
+    "phone": "8-967-761-21-94",
+    "email": "",
+    "photo": "/structure/regions/М.Р. Муругова .JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Кубашева Татьяна Николаевна",
+    "role": "Специалист отдела по взаимодействию и развитию регионов",
+    "group": "Отдел регионального взаимодействия",
+    "phone": "8-912-767-10-32, @tatyanakubasheva",
+    "email": "",
+    "photo": "/structure/regions/Т. Н. Кубашева.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Яблокова Анна Владимировна",
+    "role": "Руководитель отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-918-903-95-91, @Ane4ka_Yablokova",
+    "email": "",
+    "photo": "/structure/education/А. В. Яблокова.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Зверкова Елизавета Владимировна",
+    "role": "Ведущий специалист по организационно-техническому обеспечению предоставления грантов",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-988-409-49-71, @ElizZver",
+    "email": "",
+    "photo": "/structure/education/Е. В. Зверкова.JPG",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Зотова Наталия Викторовна",
+    "role": "Заместитель руководителя отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-917-672-72-38, @Zotova_Natalia85",
+    "email": "",
+    "photo": "",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Рокина Анастасия Михайловна",
+    "role": "Ведущий специалист по казначескому сопровождению и обеспечению выплат",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-914-725-35-46, @am_rokina",
+    "email": "",
+    "photo": "/structure/education/А. М. Рокина.JPG",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Рочева Алена Дмитриевна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-912-155-86-63, @harizako",
+    "email": "",
+    "photo": "/structure/education/А. Д. Рочева.JPG",
+    "photoScale": 2.3,
+    "photoOrigin": "30% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Ровнина Анна Васильевна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-923-678-42-55, @AnnaRovnina",
+    "email": "",
+    "photo": "/structure/education/А. В. Ровнина.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "60% 30%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Семеренко Анна Валерьевна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-913-657-81-87, @Semerenko_Anna",
+    "email": "",
+    "photo": "/structure/education/А. В. Семеренко.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Юрова Ольга Анатольевна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-918-602-14-07, @OlyaYurova",
+    "email": "",
+    "photo": "/structure/education/О. А. Юрова.jpg",
+    "photoScale": 1.4,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Пажетных Алена Дмитриевна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-969-974-81-39, @AlenaPazhetnykh",
+    "email": "",
+    "photo": "/structure/education/А. Д. Пажетных.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Ляхова Светлана Игоревна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-913-656-36-11, @VinnieKZ",
+    "email": "",
+    "photo": "/structure/education/С. И. Ляхова.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Фатыхова Дамира Ильфатовна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-927-422-51-09, @mira_fdi",
+    "email": "",
+    "photo": "/structure/education/Д. И. Фатыхова.JPG",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 40%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Давиденко Анастасия Юрьевна",
+    "role": "Методист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-910-357-32-44, @Anarusheva",
+    "email": "",
+    "photo": "/structure/education/А. Ю. Давиденко.jpg",
+    "photoScale": 2.2,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Анпилогова Валерия Евгеньевна",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-988-534-04-53, @anpilogova_v",
+    "email": "",
+    "photo": "",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Филатова Диана Дмитриевна",
+    "role": "Методист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-950-856-58-69, @Dia_Dmi",
+    "email": "",
+    "photo": "",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Ислаев Константин Васильевич",
+    "role": "Специалист отдела реализации мероприятий по профобучению",
+    "group": "Отдел реализации мероприятий по профобучению",
+    "phone": "8-917-221-64-17, @I1KV1",
+    "email": "",
+    "photo": "/structure/education/К. В. Ислаев.jpg",
+    "photoScale": 1.4,
+    "photoOrigin": "50% 10%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Корнилова Мария Андреевна",
+    "role": "Директор АНО ДПО «РСО-РАЗВИТИЕ»",
+    "group": "АНО ДПО «РСО-Развитие»",
+    "phone": "8-912-747-45-30, @mariiakorn",
+    "email": "",
+    "photo": "/structure/razvitie/М. А. Корнилова.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Меркулова Мария Вячеславовна",
+    "role": "Заместитель директора АНО ДПО «РСО-РАЗВИТИЕ»",
+    "group": "АНО ДПО «РСО-Развитие»",
+    "phone": "8-913-883-96-46",
+    "email": "",
+    "photo": "/structure/razvitie/М.В. Меркулова.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Хмелевская Валерия Олеговна",
+    "role": "Куратор корпоративного университета АНО ДПО «РСО-Развитие»",
+    "group": "АНО ДПО «РСО-Развитие»",
+    "phone": "8-925-874-21-45, @kh_vlrshka",
+    "email": "",
+    "photo": "/structure/razvitie/В. О. Хмелевская.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Шамшина Виктория Сергеевна",
+    "role": "Бренд-менеджер ТрудКрутШопа (АНО ДПО РСО-РАЗВИТИЕ)",
+    "group": "АНО ДПО «РСО-Развитие»",
+    "phone": "8-902-909-21-74",
+    "email": "",
+    "photo": "/structure/razvitie/В.С. Шамшина.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Дунаевская Полина Александровна",
+    "role": "Бренд-менеджер ТрудКрутШопа (АНО ДПО РСО-РАЗВИТИЕ)",
+    "group": "АНО ДПО «РСО-Развитие»",
+    "phone": "8-951-409-62-95",
+    "email": "",
+    "photo": "/structure/razvitie/П. А. Дунаевская.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Сидорова Алина Михайловна",
+    "role": "Руководитель отдела по созданию контента ДПО «РСО-Развитие», руководитель Лук продакшн",
+    "group": "АНО ДПО «РСО-Развитие»",
+    "phone": "8-968-416-90-08, @alina_bw",
+    "email": "",
+    "photo": "",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Юрченко Ксения Петровна",
+    "role": "Директор Фонда поддержки и развития движения студенческих отрядов",
+    "group": "Фонд поддержки движения",
+    "phone": "8-912-017-05-79, @travel_ksy",
+    "email": "",
+    "photo": "/structure/fond/К. П. Юрченко.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Потемин Евгении Александрович",
+    "role": "генеральный директор ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-919-725-55-65, @Evgeniy_Potemin",
+    "email": "",
+    "photo": "/structure/engineering/Е. А. Потемин.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Заболотских Александр Владимирович",
+    "role": "Заместитель генерального директора ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-963-454-77-45, @Zabolotskikh_Aleksandr",
+    "email": "",
+    "photo": "/structure/engineering/А. В. Заболотских.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Азарченко Яна Андреевна",
+    "role": "Заместитель генерального директора по направлению HoReCa ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-919-685-96-90, @ozornayana",
+    "email": "",
+    "photo": "/structure/engineering/Я. А. Азарченко.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Чичерова Ольга Александровна",
+    "role": "Руководитель отдела администрирования проектов ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-915-616-19-11, @chicherovao",
+    "email": "",
+    "photo": "/structure/engineering/О. А. Чичерова.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Орешкин Артем Александрович",
+    "role": "Руководитель отдела реализации проектов ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-912-681-00-85, @artemoresh",
+    "email": "",
+    "photo": "/structure/engineering/А. А. Орешкин.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Печникова Ксения Леонидовна",
+    "role": "Специалист по связям с общественностью ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-901-272-79-07, @xeniaoverdosse",
+    "email": "",
+    "photo": "/structure/engineering/К. Л. Печникова.JPG",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Олейник Эмиль Юрьевич",
+    "role": "Специалист ООО «РСО Инжиниринг» по HoReCa",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-952-605-95-06",
+    "email": "",
+    "photo": "/structure/engineering/Э. Ю. Олейник.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Хаятова Алина Сергеевна",
+    "role": "Администратор проектов ООО «РСО Инжиниринг»",
+    "group": "ООО «РСО Инжиниринг»",
+    "phone": "8-909-089-02-08, @a_khayatova",
+    "email": "",
+    "photo": "/structure/engineering/А. С. Хаятова.jpg",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  },
+  {
+    "name": "Короткова Анна Константиновна",
+    "role": "Руководитель кол-центра МООО «РСО»",
+    "group": "Кол-центр",
+    "phone": "8-913-144-36-35, @annakorotkova11076",
+    "email": "",
+    "photo": "/structure/callcenter/А. К. Короткова .jpg",
+    "photoScale": 1.8,
+    "photoPosition": "left top",
+    "photoOrigin": "40% 20%",
+    "directionLogo": "/svg/directions/default-logo.svg"
+  }
+];
+
+export const centralGroupOrder = [
+  "Руководство Центрального штаба",
+  "Аппарат МООО «РСО»",
+  "Комиссарский отдел",
+  "PR-отдел",
+  "Отдел регионального взаимодействия",
+  "Отдел реализации мероприятий по профобучению",
+  "Руководители направлений",
+  "АНО ДПО «РСО-Развитие»",
+  "Фонд поддержки движения",
+  "Кол-центр",
+  "ООО «РСО Инжиниринг»"
+];

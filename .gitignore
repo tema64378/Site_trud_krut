@@ -1,0 +1,37 @@
+# Next.js
+.next/
+out/
+build/
+
+# Dependencies
+node_modules/
+
+# Env files
+.env*.local
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+
+# TypeScript
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# Misc
+wget-log
+Untitled-1
+таблица/
+.claude/
+фото структура/
+extract-sources.js
+
+# Figma/SVG exports (не нужны в деплое)
+svg/
+public/structure-ascii/
+
+# Большие видео (не нужны для structure страницы)
+public/trudkrut/
