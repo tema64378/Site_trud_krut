@@ -31,9 +31,10 @@ export function DirectionsGrid() {
 
         if (Array.isArray(data) && data.length > 0) {
           const mapped = data.map((item: any) => {
-            const title = String(item.name || '').trim();
-            const abbr = String(item.abbreviation || '').trim();
+            const title = String(item.name || item.title || '').trim();
+            const abbr = String(item.abbreviation || item.shortTitle || '').trim();
             const slug =
+              item.slug ??
               slugMap.byAbbr.get(abbr.toLowerCase()) ??
               slugMap.byTitle.get(title.toLowerCase()) ??
               directions.find((d) => d.shortTitle === abbr || d.title === title)?.slug ??
