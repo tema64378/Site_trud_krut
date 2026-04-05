@@ -1,3 +1,6 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
+
 const fontStyles = `
   @font-face { font-family: "ActayWideBold"; src: url("/brandbook/fonts/actay/Actay Wide Bd Regular.otf"); }
   @font-face { font-family: "ActayLightBold"; src: url("/brandbook/fonts/actay/Actay Light Bold.otf"); }
@@ -46,6 +49,10 @@ const logosHorizontal = [
 ];
 
 export default function BrandbookPage() {
+  const availableMockups = mockups.filter((item) =>
+    existsSync(path.join(process.cwd(), "public", item.file.replace(/^\//, ""))),
+  );
+
   return (
     <>
       <style dangerouslySetInnerHTML={{ __html: fontStyles }} />
@@ -392,33 +399,43 @@ export default function BrandbookPage() {
               Примеры применения фирменного стиля на различных носителях.
             </p>
           </div>
-          <div className="card-grid columns-3" style={{ marginTop: "24px" }}>
-            {mockups.map((item, i) => (
-              <article key={i} className="card" style={{ padding: "16px" }}>
-                <div
-                  style={{
-                    borderRadius: "10px",
-                    overflow: "hidden",
-                    marginBottom: "12px",
-                    background: "#f2f2f2",
-                  }}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={item.file}
-                    alt={item.title}
+          {availableMockups.length > 0 ? (
+            <div className="card-grid columns-3" style={{ marginTop: "24px" }}>
+              {availableMockups.map((item, i) => (
+                <article key={i} className="card" style={{ padding: "16px" }}>
+                  <div
                     style={{
-                      width: "100%",
-                      height: "180px",
-                      objectFit: "cover",
-                      display: "block",
+                      borderRadius: "10px",
+                      overflow: "hidden",
+                      marginBottom: "12px",
+                      background: "#f2f2f2",
                     }}
-                  />
-                </div>
-                <h3 style={{ margin: "0", fontSize: "15px" }}>{item.title}</h3>
-              </article>
-            ))}
-          </div>
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={item.file}
+                      alt={item.title}
+                      style={{
+                        width: "100%",
+                        height: "180px",
+                        objectFit: "cover",
+                        display: "block",
+                      }}
+                    />
+                  </div>
+                  <h3 style={{ margin: "0", fontSize: "15px" }}>{item.title}</h3>
+                </article>
+              ))}
+            </div>
+          ) : (
+            <article className="card" style={{ marginTop: "24px", padding: "24px" }}>
+              <h3 style={{ marginTop: 0, marginBottom: "10px" }}>Макеты временно скрыты</h3>
+              <p style={{ margin: 0, color: "var(--muted)", lineHeight: 1.6 }}>
+                На этой сборке отсутствуют исходные превью-макеты брендбука, поэтому мы скрыли пустые карточки.
+                Остальные элементы фирменного стиля, логотипы, шрифты и паттерны доступны.
+              </p>
+            </article>
+          )}
         </div>
       </section>
     </>

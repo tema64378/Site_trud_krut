@@ -1,3 +1,6 @@
+import { existsSync } from "node:fs";
+import path from "node:path";
+
 const documents = [
   {
     title: "Устав МООО «РСО»",
@@ -16,6 +19,11 @@ const documents = [
 ];
 
 export default function DocumentsPage() {
+  const docs = documents.map((doc) => ({
+    ...doc,
+    available: existsSync(path.join(process.cwd(), "public", doc.file.replace(/^\//, ""))),
+  }));
+
   return (
     <>
       <section className="page-hero">
@@ -32,7 +40,7 @@ export default function DocumentsPage() {
       <section className="page-content">
         <div className="container">
           <div className="card-grid columns-3">
-            {documents.map((doc, i) => (
+            {docs.map((doc, i) => (
               <article key={i} className="card">
                 <div
                   style={{
@@ -51,15 +59,32 @@ export default function DocumentsPage() {
                 </div>
                 <h3>{doc.title}</h3>
                 <p>{doc.description}</p>
-                <a
-                  href={doc.file}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button primary"
-                  style={{ marginTop: "16px", display: "inline-block" }}
-                >
-                  Скачать
-                </a>
+                {doc.available ? (
+                  <a
+                    href={doc.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button primary"
+                    style={{ marginTop: "16px", display: "inline-block" }}
+                  >
+                    Скачать
+                  </a>
+                ) : (
+                  <div
+                    style={{
+                      marginTop: "16px",
+                      display: "inline-block",
+                      padding: "10px 16px",
+                      borderRadius: "999px",
+                      background: "rgba(8, 4, 255, 0.08)",
+                      color: "var(--muted)",
+                      fontSize: "14px",
+                      fontWeight: 600,
+                    }}
+                  >
+                    Документ добавим перед публикацией
+                  </div>
+                )}
               </article>
             ))}
           </div>
