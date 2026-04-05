@@ -19,7 +19,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководство Центрального штаба",
     "phone": "8-903-025-40-10, @yaroslav_zubashchenko",
     "email": "",
-    "photo": "/structure/Я. В. Зубащенко_Командир Центрального штаба Российских студенческих отрядов.jpg",
+    "photo": "/structure/Я. В. Зубащенко_Командир Центрального штаба Российских студенческих отрядов.jpg",
     "photoScale": 2.5,
     "photoOrigin": "50% 20%",
     "directionLogo": "/svg/directions/zubashchenko-logo.svg",
@@ -31,7 +31,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководство Центрального штаба",
     "phone": "8-913-635-25-29, @yulyapozdno",
     "email": "",
-    "photo": "/structure/Ю. Е. Позднякова_Комиссар Центрального штаба Российских студенческих отрядов.JPG",
+    "photo": "/structure/Ю. Е. Позднякова_Комиссар Центрального штаба Российских студенческих отрядов.JPG",
     "photoScale": 1.4,
     "directionLogo": "/svg/directions/pozdnyakova-logo.svg",
     "directionLogoStyle": "pattern"
@@ -72,7 +72,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-914-197-93-56, @Shaikin_Pavel",
     "email": "",
-    "photo": "/structure/directions/П. А. Шайкин.png",
+    "photo": "/structure/directions/П. А. Шайкин.png",
     "photoScale": 2.1,
     "photoOrigin": "50% 34%",
     "directionLogo": "/svg/directions/puting-color.svg"
@@ -136,7 +136,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководители направлений",
     "phone": "8-918-546-32-68, @volodiyay",
     "email": "",
-    "photo": "/structure/directions/В. А. Живой.PNG",
+    "photo": "/structure/directions/В. А. Живой.PNG",
     "photoScale": 2.5,
     "photoOrigin": "50% 5%",
     "directionLogo": "/svg/directions/agriculture-color.svg"
@@ -361,7 +361,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Отдел регионального взаимодействия",
     "phone": "8-992-290-03-09, @ytuta2",
     "email": "",
-    "photo": "/structure/regions/А.С. Косаржевский .jpg",
+    "photo": "/structure/regions/А.С. Косаржевский .jpg",
     "directionLogo": "/svg/directions/default-logo.svg"
   },
   {
