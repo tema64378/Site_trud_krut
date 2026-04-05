@@ -19,7 +19,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководство Центрального штаба",
     "phone": "8-903-025-40-10, @yaroslav_zubashchenko",
     "email": "",
-    "photo": "/structure/Я. В. Зубащенко_Командир Центрального штаба Российских студенческих отрядов.jpg",
+    "photo": "/structure/zubashchenko-leadership.jpg",
     "photoScale": 2.5,
     "photoOrigin": "50% 20%",
     "directionLogo": "/svg/directions/zubashchenko-logo.svg",
@@ -31,7 +31,7 @@ export const centralMembers: CentralMember[] = [
     "group": "Руководство Центрального штаба",
     "phone": "8-913-635-25-29, @yulyapozdno",
     "email": "",
-    "photo": "/structure/Ю. Е. Позднякова_Комиссар Центрального штаба Российских студенческих отрядов.JPG",
+    "photo": "/structure/pozdnyakova-leadership.jpg",
     "photoScale": 1.4,
     "directionLogo": "/svg/directions/pozdnyakova-logo.svg",
     "directionLogoStyle": "pattern"
