@@ -2299,18 +2299,40 @@ main {
   text-align: center;
 }
 
+/* Обёртка вкладок с градиентом-fade справа */
+.struct-tabs-wrap {
+  position: relative;
+}
+.struct-tabs-wrap::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 1.5px;
+  width: 56px;
+  background: linear-gradient(to right, transparent, var(--bg));
+  pointer-events: none;
+  z-index: 2;
+}
+
 .struct-tabs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  padding: 24px 0 0;
+  flex-wrap: nowrap;
+  gap: 4px;
+  padding: 20px 0 0;
   border-bottom: 1.5px solid var(--border-color);
-  margin-bottom: 32px;
+  margin-bottom: 28px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.struct-tabs::-webkit-scrollbar {
+  display: none;
 }
 
 .struct-tab {
-  padding: 8px 13px;
-  font-size: 13px;
+  padding: 8px 12px;
+  font-size: 12.5px;
   font-weight: 600;
   color: var(--muted);
   border-radius: 10px 10px 0 0;
@@ -2318,6 +2340,7 @@ main {
   border-bottom: none;
   transition: color 0.2s, background 0.2s;
   white-space: nowrap;
+  flex-shrink: 0;
   margin-bottom: -1.5px;
 }
 
@@ -2333,12 +2356,154 @@ main {
   border-bottom-color: var(--bg);
 }
 
+/* Вложенные вкладки (дочерние организации) */
+.struct-subtabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: -24px;
+  margin-bottom: 28px;
+  padding: 12px 0;
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+.struct-subtab {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  border-radius: 8px;
+  border: 1.5px solid transparent;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.struct-subtab:hover {
+  color: var(--text);
+  background: var(--accent-soft);
+}
+
+.struct-subtab--active {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+/* Пустое состояние */
+.struct-empty {
+  padding: 72px 0 80px;
+  text-align: center;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.struct-empty-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  filter: grayscale(0.4);
+}
+.struct-empty p {
+  font-size: 15px;
+  margin: 0;
+}
+
 /* Сетка карточек — 3 колонки */
 .struct-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   margin-bottom: 60px;
+}
+
+/* ─── Hero-строка: командир + комиссар ──────────────────────────────────── */
+.struct-leader-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+/* Карточка лидера — крупнее, заметнее */
+.struct-card--leader {
+  min-height: 260px !important;
+}
+
+.struct-card--leader::before {
+  display: none;
+}
+
+/* Белая полоса сверху — знак статуса */
+.struct-card--leader::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 2;
+}
+
+.struct-card--leader .struct-info {
+  padding: 32px 24px 28px;
+  gap: 10px;
+}
+
+.struct-card--leader .struct-name {
+  font-size: 1.22rem !important;
+  font-weight: 900 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.22 !important;
+}
+
+.struct-card--leader .struct-role {
+  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  line-height: 1.5 !important;
+}
+
+.struct-card--leader .struct-photo {
+  width: 220px !important;
+}
+
+.struct-card--leader:hover {
+  box-shadow: 0 18px 52px rgba(8, 4, 255, 0.55) !important;
+  transform: translateY(-4px) scale(1.01) !important;
+  outline: 2.5px solid rgba(255, 255, 255, 0.55) !important;
+}
+
+@media (max-width: 720px) {
+  .struct-leader-row {
+    grid-template-columns: 1fr;
+  }
+  .struct-card--leader .struct-photo {
+    width: 140px !important;
+  }
+  .struct-card--leader {
+    min-height: 200px !important;
+  }
+}
+
+/* Разделитель подгрупп внутри сетки (ЦШ: Руководство / Направления) */
+.struct-group-header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 0 2px;
+}
+.struct-group-header::after {
+  content: '';
+  flex: 1;
+  height: 1.5px;
+  background: var(--border-color);
 }
 
 /* Одна карточка */
@@ -2348,8 +2513,8 @@ main {
   background: #0804ff;
   border-radius: 16px;
   overflow: hidden;
-  min-height: 180px;
-  transition: box-shadow 0.2s, transform 0.2s;
+  min-height: 196px;
+  transition: box-shadow 0.25s, transform 0.25s;
   position: relative;
 }
 
@@ -2445,9 +2610,9 @@ main {
 }
 
 .struct-card:hover {
-  box-shadow: 0 8px 28px rgba(8, 4, 255, 0.35);
-  transform: translateY(-2px);
-  outline: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 12px 36px rgba(8, 4, 255, 0.45);
+  transform: translateY(-3px) scale(1.005);
+  outline: 2px solid rgba(255, 255, 255, 0.45);
 }
 
 .struct-card--highlight {
@@ -2473,24 +2638,25 @@ main {
 }
 
 .struct-name {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.93rem;
+  font-weight: 800;
   margin: 0;
   color: #fff;
-  line-height: 1.3;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
 }
 
 .struct-role {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.72);
   margin: 0;
-  line-height: 1.45;
+  line-height: 1.42;
 }
 
 /* Фото — справа, занимает всю высоту */
 .struct-photo {
   position: relative;
-  width: 130px;
+  width: 148px;
   flex-shrink: 0;
   overflow: hidden;
   background: #c7cfe8;
@@ -2562,14 +2728,11 @@ main {
 @media (max-width: 640px) {
   .struct-tabs {
     gap: 4px;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 0;
   }
 
   .struct-tab {
     font-size: 12px;
-    padding: 8px 12px;
+    padding: 7px 10px;
   }
 
   .struct-list {
@@ -2577,15 +2740,15 @@ main {
   }
 
   .struct-photo {
-    width: 110px;
-  }
-
-  .struct-tab--active {
-    scroll-snap-align: start;
+    width: 120px;
   }
 
   .struct-search-wrap {
     max-width: 100%;
+  }
+
+  .struct-tabs-wrap::after {
+    width: 36px;
   }
 }
 

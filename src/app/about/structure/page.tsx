@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation';
 
 export default function StructurePage() {
-  redirect('/about/structure/leadership');
+  redirect('/about/structure/hq');
 }
